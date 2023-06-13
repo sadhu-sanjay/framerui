@@ -48,10 +48,11 @@ export const headerData: HeaderProps = {
             href: 'https://github.com/onwidget/tailnext',
             targetBlank: true,
             btnType: 'primary',
-        }
+        },
+        
     ],
     isSticky: true,
     showToggleTheme: true,
     showRssFeed: false,
-    position: 'center',
+    position: 'right',
 }

@@ -1,3 +1,4 @@
+import { ChicaneThemeProvider } from '~/controllers/ThemeProvider'
 import Header from '../components/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
@@ -17,9 +18,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <Header />
-        {children}</body>
-    </html>
+        <ChicaneThemeProvider >
+          <Header />
+          <main>{children}</main>
+        </ChicaneThemeProvider>
+      </body>
+    </html >
   )
 }
 
