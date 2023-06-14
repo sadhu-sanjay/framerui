@@ -3,6 +3,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Getting Started
 
 First, run the development server:
+![Alt Text](src/data/ezgif.com-video-to-gif.gif)
+
+
 
 ```bash
 npm run dev

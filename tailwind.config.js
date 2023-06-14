@@ -29,11 +29,11 @@ module.exports = {
           '100%': { transform: 'translateY(0%)' },
         },
         rotateIn: {
-          '0%': { transform: 'rotate(0deg)' }, 
+          '0%': { transform: 'rotate(0deg)' },
           '100%': { transform: 'rotate(-90deg)' },
         },
         slide_in_right: {
-          '0%': { transform: 'translateX(100%)'},
+          '0%': { transform: 'translateX(100%)' },
           '100%': { transform: 'translateX(0)' },
         },
         slide_in_left: {
