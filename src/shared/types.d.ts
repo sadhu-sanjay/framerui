@@ -1,5 +1,12 @@
 import { MouseEventHandler } from "react"
 
+interface ChicaneTextProps { 
+    title?: string
+    subtitle?: string
+    color?: string
+    size?: string
+}
+
 interface ToggleMenuProps {
     handleToggleMenuOnClick: MouseEventHandler<HTMLButtonElement>
     isToggleMenuOpen: boolean

@@ -9,7 +9,7 @@ interface ProvidorProps {
 const ChicaneThemeProvider = ({children}: ProvidorProps) => {
 
     return (
-        <ThemeProvider attribute='class' defaultTheme='system'>
+        <ThemeProvider disableTransitionOnChange attribute='class' defaultTheme='system'>
             {children}
         </ThemeProvider>
     )

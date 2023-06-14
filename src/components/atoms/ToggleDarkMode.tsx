@@ -3,7 +3,10 @@
 import { useState, useEffect } from 'react';
 import { useTheme } from 'next-themes';
 
-import { IconSun, IconMoon } from '@tabler/icons-react'
+// import { IconSun, IconMoon } from '@tabler/icons-react'
+import { SunIcon, MoonIcon } from '@heroicons/react/24/solid'
+
+
 
 const ToggleDarkMode = () => {
 
@@ -31,10 +34,10 @@ const ToggleDarkMode = () => {
         >
             {mounted ? (
                 currentTheme === 'dark' ? (
-                    <IconMoon className="animate-zoom_out h-5 w-5" />
+                    <MoonIcon className="animate-pendulum h-5 w-5" />
                 ) : (
                     // add rotate in  animation
-                    <IconSun className="animate-rotateIn h-5 w-5" />
+                    <SunIcon className="animate-rotateIn h-5 w-5" />
                 )) : (
                 <div className="h-5 w-5"></div>
             )}

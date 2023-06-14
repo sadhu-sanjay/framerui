@@ -10,19 +10,19 @@ module.exports = {
       colors: {
         primary: colors.blue,
         secondary: colors.orange,
+        textHeading: colors.slate[950],
+        textHeadingDark: colors.gray[200]
       },
       animation: {
         slide_down: 'slide_down 0.44s ease-in-out',
         slide_in_right: 'slide_in_right 0.25s ease-in-out',
         slide_in_left: 'slide_in_left 0.25s ease-in-out',
-        rotateIn: 'rotateIn 0.25s ease-in-out',
-        zoom_out: 'zoom_out 0.25s ease-in-out',
+        rotateIn: 'rotateIn 0.5s ease-in-out',
+        pendulum: 'pendulum 0.5s ease-in-out ',
       },
       keyframes: {
-        zoom_out: {
-          '0%': { transform: 'scale(0)' },
-          '100%': { transform: 'scale(1)' },
-        
+        pendulum: {
+          '0%': { transform: 'rotate(-25deg)' },
         },
         slide_down: {
           '0%': { transform: 'translateY(-100%)' },
@@ -30,7 +30,7 @@ module.exports = {
         },
         rotateIn: {
           '0%': { transform: 'rotate(0deg)' }, 
-          '100%': { transform: 'rotate(-180deg)' },
+          '100%': { transform: 'rotate(-90deg)' },
         },
         slide_in_right: {
           '0%': { transform: 'translateX(100%)'},
@@ -44,6 +44,7 @@ module.exports = {
     },
   },
   plugins: [],
+  darkMode: 'class',
 }
 
 
