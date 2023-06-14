@@ -4,12 +4,12 @@ import { Subtitle } from '~/components/atoms/Subtitle';
 
 function Hero(props: ChicaneTextProps) {
     
-    const { title, color, size } = props;
+    const { title, subtitle, color, size } = props;
 
     return (
         <div>
             <Heading title={title} />
-            <Subtitle title={title} />
+            <Subtitle title={subtitle} />
         </div>
     )
 }

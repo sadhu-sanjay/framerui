@@ -7,7 +7,7 @@ const CTA = (props: { data: CallToAction }) => {
     const { text, href, icon: Icon, targetBlank, btnText, btnType } = props.data;
     const classLocal = `box-border shrink-0 w-min h-10 flex-row justify-center 
     items-center  p-[15px] drop-shadow-xl overflow-visible content-center
-    flex-nowrap gap-2.5 rounded-lg`
+    flex-nowrap gap-2.5 rounded-full`
 
     return (
         <>
@@ -32,7 +32,7 @@ const CTA = (props: { data: CallToAction }) => {
                         </Link>
                     ) : (
                         <Link
-                            className={`btn ${btnType === 'primary' ? 'btn-primary' : ''} w-full sm:mb-0 ${props.class ? props.class : ''
+                            className={`btn ${btnType === 'primary' ? 'btn-primary' : ''} w-full sm:mb-0 ${classLocal ? classLocal : ''
                                 } ${btnText === 'uppercase' ? 'uppercase' : ''}`}
                             href={href}
                         >
