@@ -7,7 +7,7 @@ const CTA = (props: { data: CallToAction }) => {
     const { text, href, icon: Icon, targetBlank, btnText, btnType } = props.data;
     const classLocal = `box-border shrink-0 w-min h-10 flex-row justify-center 
     items-center  p-[15px] drop-shadow-xl overflow-visible content-center
-    flex-nowrap gap-2.5 rounded-full`
+    flex-nowrap gap-2.5 rounded-lg`
 
     return (
         <>

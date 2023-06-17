@@ -1,4 +1,4 @@
-import { jsx as _jsx } from "react/jsx-runtime"; 
+import { jsx as _jsx } from "react/jsx-runtime";
 import { addPropertyControls, ControlType } from "framer";/**
  * TEXTMASK
  * By Benjamin den Boer
@@ -113,23 +113,3 @@ addPropertyControls(TextMask,
             min: 0
         }
     });
-
-
-    .heading {
-        flex-shrink: 0;
-        width: auto; /* 585px */
-        height: auto; /* 87px */
-        white-space: pre-wrap;
-        word-wrap: break-word;
-        word-break: break-word;
-        max-width: 100%;
-        position: relative;
-        font-weight: 700;
-        font-style: normal;
-        font-family: "Inter", "Inter Placeholder", sans-serif;
-        color: var(--token-b9c3c957-2c66-49c4-9732-fa196fddac20, #001122);
-        font-size: 72px;
-        letter-spacing: -3.8px;
-        line-height: 1.2;
-        text-align: center;
-      }

@@ -1,10 +1,10 @@
 'use client'
 
-import { ChicaneTextProps } from "~/shared/types";
+import { TextProps } from "~/shared/types";
 import { motion } from "framer-motion";
 
-export const Subtitle = (props: ChicaneTextProps) => {
-    const { title } = props;
+export const Subtitle = (props: TextProps) => {
+    const { text } = props;
 
     return (
         <motion.div
@@ -19,7 +19,7 @@ export const Subtitle = (props: ChicaneTextProps) => {
             }}
         >
             <div className="dark:text-gray-200 flex-shrink-0 w-auto h-auto whitespace-pre-wrap break-words overflow-visible flex-1 flex-grow-0  min-w-0 relative font-medium font-sans text-gray-500 text-lg tracking-tighter leading-tight text-center">
-                {title}
+                {text}
             </div>
         </motion.div>
     )

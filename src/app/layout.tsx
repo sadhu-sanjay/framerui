@@ -1,5 +1,5 @@
 import { ChicaneThemeProvider } from '~/controllers/ThemeProvider'
-import Header from '../components/Header'
+import Header from '../components/sections/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
 

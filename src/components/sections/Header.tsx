@@ -3,11 +3,11 @@
 import { useState } from "react"
 import Link from 'next/link'
 import Image from 'next/image'
-import { headerData } from '~/data/data'
-import Logo from './atoms/Logo'
-import ToggleMenu from "./atoms/ToggleMenu"
+import { headerData } from '~/shared/data'
+import Logo from '../atoms/Logo'
+import ToggleMenu from "../atoms/ToggleMenu"
 import { CallToAction } from "~/shared/types"
-import CTA from '~/components/CTA'
+import CTA from '~/components/atoms/CTA'
 import { IconRss } from '@tabler/icons-react'
 import ToggleDarkMode from '~/components/atoms/ToggleDarkMode'
 

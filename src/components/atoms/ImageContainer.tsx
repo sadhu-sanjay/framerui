@@ -12,8 +12,8 @@ export const ImageContainer = (imgProps: ImageProps) => {
     return (
         <>
             <motion.div
-                initial={{ rotateX: 0, opacity: 0 }}
-                animate={{ rotateX: [40, 0, 0], opacity: 1 }}
+                initial={{ y: 30, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
                 transition={{
                     type: 'spring',
                     stiffness: 100,
@@ -22,8 +22,13 @@ export const ImageContainer = (imgProps: ImageProps) => {
                     damping: 30
                 }}
             >
-                <Image src={src} alt={alt} width={width} height={0}
-                    className={classStyles} />
+                <Image 
+                    src={src}
+                    alt={alt}
+                    width={width}
+                    height={height}
+                    className={classStyles}
+                />
             </motion.div>
         </>
     )
