@@ -13,7 +13,7 @@ const CTA = (props: { data: CallToAction }) => {
     return (
         <>
             {props.data && text && href && (
-                <div className='m-3 flex w-full sm:w-auto' >
+                <div className='flex w-full sm:w-auto' >
                     {targetBlank ? (
                         <Link
                             className={`btn ${btnType === 'primary' ? 'btn-primary' : ''} w-full 

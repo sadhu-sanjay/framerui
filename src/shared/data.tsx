@@ -32,7 +32,7 @@ export const featuresLargeData: FeatureProps = {
         },
         actions: [
             {
-                text: 'Download',
+                text: 'Read More',
                 href: 'https://github.com/onwidget/tailnext',
                 targetBlank: true,
                 btnType: 'primary',

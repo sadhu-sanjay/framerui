@@ -27,10 +27,12 @@ function Hero(props: ChicaneTwoText) {
     return (
         <section className={sectionClasses} >
             <div className='flex flex-col items-center 
-                justify-center gap-0'>
+                justify-center'>
                 <Heading text={title?.text} ></Heading>
                 <Subtitle {...subtitle} />
-                <AnimateUp> <CTA data={callToAction} /> </AnimateUp>
+                <div style={{ marginTop: '.5rem' }}> {/*custom padding as workaround */}
+                    <AnimateUp > <CTA data={callToAction} /> </AnimateUp>
+                </div>
                 <ImageContainer {...imgProps} />
             </div>
         </section>
