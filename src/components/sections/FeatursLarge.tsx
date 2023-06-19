@@ -21,11 +21,11 @@ export const FeaturesLarge = (props: FeatureProps) => {
                     <div className="flex-shrink-0 flex-1 w-full h-min flex flex-row
                     justify-center items-center overflow-visible relative
                     content-center flex-nowrap gap-10 rounded-none bg-blue-00" >
-                        <Image className="
+                        <div className="
                         box-border flex-1 flex-shrink-0 w-[1fr] h-360 block overflow-hidden
                          relative aspect-[4/3] bg-cover bg-no-repeat bg-center 
                 rounded-lg"
-                            style={{ objectFit: 'cover' }} src={src} alt="image"
+                            style={{ objectFit: 'cover', backgroundImage: `url(${src.src})` }}
                         />
                         <div className="content-center flex-shrink-0 flex flex-1 w-[1fr] h-auto 
                 flex-col justify-center items-start self-stretch relative p-0 gap-5 
