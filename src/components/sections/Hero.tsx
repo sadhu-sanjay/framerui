@@ -1,10 +1,11 @@
 import { Heading } from '~/components/atoms/Heading'
-import { ChicaneTwoText } from '~/shared/types';
+import { CallToAction, ChicaneTwoText, TextProps } from '~/shared/types';
 import { Subtitle } from '~/components/atoms/Subtitle';
 import { ImageContainer } from '../atoms/ImageContainer';
 import { ImageProps } from 'next/image';
 import img from '~/assets/images/hero.png'
-
+import CTA from '../atoms/CTA';
+import AnimateUp from '~/common/BaseAnimation';
 
 function Hero(props: ChicaneTwoText) {
 
@@ -15,13 +16,23 @@ function Hero(props: ChicaneTwoText) {
         width: 935,
         height: 550,
     }
+    const callToAction: CallToAction = {
+        text: 'Buy Now',
+        href: '#',
+        targetBlank: true,
+        btnType: 'primary',
+    }
 
     const sectionClasses = `flex flex-col items-center justify-center gap-1`
     return (
         <section className={sectionClasses} >
-            <Heading {...title} />
-            <Subtitle {...subtitle}/>
-            <ImageContainer {...imgProps} />
+            <div className='flex flex-col items-center 
+                justify-center gap-0'>
+                <Heading text={title?.text} ></Heading>
+                <Subtitle {...subtitle} />
+                <AnimateUp> <CTA data={callToAction} /> </AnimateUp>
+                <ImageContainer {...imgProps} />
+            </div>
         </section>
     )
 }

@@ -8,6 +8,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      buttonSize: {
+        heading: '7xl',
+        featureHeading: '5xl',
+      },
       colors: {
         primary: colors.blue,
         secondary: colors.orange,

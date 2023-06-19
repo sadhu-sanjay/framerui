@@ -12,9 +12,14 @@
     @apply border-none text-gray-600 shadow-none hover:text-gray-900 dark:text-gray-400 dark:hover:text-white;
   }
 
-  .btn-primary {
+  /* .btn-primary {
     @apply border-primary-600 bg-primary-600 font-semibold text-white hover:border-primary-800 hover:bg-primary-800 hover:text-white dark:border-primary-700 dark:bg-primary-700 dark:text-white dark:hover:border-primary-900 dark:hover:bg-primary-900;
+  } */
+
+  .btn-primary {
+    @apply border-secondary-600 bg-secondary-600 font-semibold text-white hover:border-secondary-800 hover:bg-secondary-800 hover:text-white dark:border-secondary-700 dark:bg-secondary-700 dark:text-white dark:hover:border-secondary-900 dark:hover:bg-secondary-900;
   }
+  
 
   .card {
     @apply rounded-md border-gray-200 bg-white px-6 pt-10 pb-8 shadow-xl transition duration-300 ease-in-out dark:border dark:border-slate-800 dark:bg-slate-900;

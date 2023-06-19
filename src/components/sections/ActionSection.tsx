@@ -1,5 +1,5 @@
 import { ActionSectionProps } from "~/shared/types";
-import { Heading } from "../atoms/Heading";
+import { Heading2 } from "../atoms/Heading2";
 import { title } from "process";
 import { Subtitle } from "../atoms/Subtitle";
 
@@ -10,7 +10,7 @@ export const ActionSection = (props: ActionSectionProps) => {
 
     return (
         <div>
-            <Heading {...title} />
+            <Heading2 text={title?.text} />
             <Subtitle text={subtitle?.text} />
         </div>
     )

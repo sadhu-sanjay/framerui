@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import AnimateUp from '~/common/BaseAnimation';
 import { CallToAction } from '~/shared/types'
 
 
@@ -12,7 +13,7 @@ const CTA = (props: { data: CallToAction }) => {
     return (
         <>
             {props.data && text && href && (
-                <div className='flex w-full sm:w-auto' >
+                <div className='m-3 flex w-full sm:w-auto' >
                     {targetBlank ? (
                         <Link
                             className={`btn ${btnType === 'primary' ? 'btn-primary' : ''} w-full 

@@ -6,11 +6,12 @@ import {
 import { IconChevronDown } from '@tabler/icons-react'
 import frontImage from '~/assets/images/front.webp'
 
+
 export const heroProps: ChicaneTwoText = {
     title: {
         text: "Welcome to Chiane",
-        alignment: 'center',
-        fontSize: '7xl',
+        alignment: 'text-center',
+        fontSize: 'text-7xl'
     },
     subtitle: {
         text: "Find the world of opportunites"
@@ -21,12 +22,12 @@ export const featuresLargeData: FeatureProps = {
     actionSection: {
         twoText: {
             title: {
-                text: 'Astonishing to look',
-                fontSize: '5xl',
-                alignment: 'left',
+                text: 'Fast',
+                fontSize: 'text-5xl',
+                alignment: 'text-left',
             },
             subtitle: {
-                text: 'React component that allows you to create a beautiful and responsive navigation bar.',
+                text: 'You have never made website this fast before',
             },
         },
         actions: [
