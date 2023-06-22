@@ -1,21 +1,55 @@
-import {
-    FeatureProps,
-    ChicaneTwoText,
-    HeaderProps
-} from './types'
 import { IconChevronDown } from '@tabler/icons-react'
 import frontImage from '~/assets/images/front.webp'
-
+import {
+    ChicaneTwoText,
+    FeatureProps,
+    HeaderProps,
+    TwoColumnImageTextProps
+} from './types'
 
 export const heroProps: ChicaneTwoText = {
     title: {
-        text: "Welcome to Chiane",
+        text: "Welcome to Chicane",
         alignment: 'text-center',
         fontSize: 'text-7xl'
     },
     subtitle: {
         text: "Find the world of opportunites"
     }
+}
+
+export const twoColumnImageTextData: FeatureProps = {
+    actionSection: {
+        twoText: {
+            title: {
+                text: 'Double Click to Update Anything',
+            },
+            subtitle: {
+                text: 'Double click the image placeholders to add images. Do the same for any text, then tweak styles and publish.',
+            },
+        },
+        actions: [
+            {
+                text: 'Download ',
+                href: 'https://github.com/onwidget/tailnext',
+                targetBlank: true,
+                btnType: 'primary',
+            },
+            {
+                text: 'Read More',
+                href: 'https://github.com/onwidget/tailnext',
+                targetBlank: true,
+                btnType: 'secondary',
+            }
+        ]
+    },
+    image: {
+        url: frontImage.src,
+        alt: 'Front Image',
+        width: '100%',
+        height: '100%',
+    },
+
 }
 
 export const featuresLargeData: FeatureProps = {
@@ -88,6 +122,7 @@ export const headerData: HeaderProps = {
             label: 'Contact',
             href: '/contact'
         },
+       
     ],
     actions: [
         {

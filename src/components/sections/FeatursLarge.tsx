@@ -3,7 +3,6 @@ import img1 from '~/assets/images/back.webp';
 import { ActionSection } from "~/components/sections/ActionSection";
 import { FeatureProps } from "~/shared/types";
 
-
 export const FeaturesLarge = (props: FeatureProps) => {
 
     const { actionSection, image } = props
@@ -12,7 +11,7 @@ export const FeaturesLarge = (props: FeatureProps) => {
 
     return (
         <section>
-            <div className="py-24 relative w-full h-min flex flex-col justify-center 
+            <div className="py-4 relative w-full h-min flex flex-col justify-center 
             items-center flex-nowrap gap-2 rounded-none overflow-hidden bg-blue-00">
                 <div className="rounded-none gap-10 flex-nowrap content-center p-10 relative 
                 overflow-visible max-w-full justify-center items-center flex-col flex 

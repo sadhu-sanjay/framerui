@@ -26,6 +26,7 @@ function Hero(props: ChicaneTwoText) {
     const sectionClasses = `flex flex-col items-center justify-center gap-1`
     return (
         <section className={sectionClasses} >
+            
             <div className='flex flex-col items-center 
                 justify-center'>
                 <Heading text={title?.text} ></Heading>

@@ -59,7 +59,7 @@ export default function Header() {
                                     <li key={`item-link-${index}`} className={` ${links?.length ? 'dropdown' : ''} `}>
                                         <Link
                                             className="flex items-center px-4 py-3 font-medium transition duration-150 ease-in-out hover:text-gray-900 dark:hover:text-white"
-                                            href='/'
+                                            href={href ?? ''}
                                         >
                                             {label}
                                         </Link>

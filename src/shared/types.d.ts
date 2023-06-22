@@ -1,5 +1,11 @@
-import { MouseEventHandler } from "react"
+import { MouseEventHandler } from "react";
 
+
+interface TwoColumnImageTextProps {
+    title?: TextProps
+    subtitle?: TextProps
+    image?: ChicaneImage
+}
 
 interface FeatureProps {
     actionSection: ActionSectionProps;
@@ -65,8 +71,8 @@ export interface HeaderProps {
 
 
 // TailWind Types
-type TailWindTextSizes = 'text-xs' | 'text-sm' | 'text-base' | 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl' | 'text-4xl' | 'text-5xl' | 'text-6xl' | 'text-7xl' | 'text-8xl' | 'text-9xl' 
-type TailWindSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl' | '7xl' | '8xl' | '9xl'  
+type TailWindTextSizes = 'text-xs' | 'text-sm' | 'text-base' | 'text-lg' | 'text-xl' | 'text-2xl' | 'text-3xl' | 'text-4xl' | 'text-5xl' | 'text-6xl' | 'text-7xl' | 'text-8xl' | 'text-9xl'
+type TailWindSizes = 'xs' | 'sm' | 'md' | 'lg' | 'xl' | '2xl' | '3xl' | '4xl' | '5xl' | '6xl' | '7xl' | '8xl' | '9xl'
 type TailWindColor = 'primary' | 'secondary' | 'accent' | 'neutral' | 'base-100' | 'info' | 'success' | 'warning' | 'error'
 type TailWindFont = 'sans' | 'serif' | 'mono'
 type TailWindFontWeight = 'normal' | 'medium' | 'semibold' | 'bold' | 'extrabold' | 'black'
