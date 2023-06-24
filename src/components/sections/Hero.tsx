@@ -26,15 +26,16 @@ function Hero(props: ChicaneTwoText) {
     const sectionClasses = `flex flex-col items-center justify-center gap-1`
     return (
         <section className={sectionClasses} >
-            
-            <div className='flex flex-col items-center 
+            <div className='px-12 py-8 lg:p-20 flex flex-col items-center justify-center gap-1' >
+                <div className='flex flex-col items-center 
                 justify-center'>
-                <Heading text={title?.text} ></Heading>
-                <Subtitle {...subtitle} />
-                <div style={{ marginTop: '.5rem' }}> {/*custom padding as workaround */}
-                    <AnimateUp > <CTA data={callToAction} /> </AnimateUp>
+                    <Heading text={title?.text} ></Heading>
+                    <Subtitle {...subtitle} />
+                    <div style={{ marginTop: '.5rem' }}> {/*custom padding as workaround */}
+                        <AnimateUp > <CTA data={callToAction} /> </AnimateUp>
+                    </div>
+                    <ImageContainer {...imgProps} />
                 </div>
-                <ImageContainer {...imgProps} />
             </div>
         </section>
     )

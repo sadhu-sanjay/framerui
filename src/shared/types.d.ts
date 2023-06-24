@@ -1,6 +1,13 @@
 import { MouseEventHandler } from "react";
 
 
+interface Grid1ItemProps {
+    image?: ChicaneImage
+    title?: TextProps
+    subtitle?: TextProps
+    actions?: Array<CallToAction>
+}
+
 interface TwoColumnImageTextProps {
     title?: TextProps
     subtitle?: TextProps
@@ -12,10 +19,10 @@ interface FeatureProps {
     image?: ChicaneImage;
 }
 interface ActionSectionProps {
-    twoText: ChicaneTwoText;
+    twoText: DoubleTextProps;
     actions: Array<CallToAction>;
 }
-interface ChicaneTwoText {
+interface DoubleTextProps {
     title?: TextProps
     subtitle?: TextProps
 }

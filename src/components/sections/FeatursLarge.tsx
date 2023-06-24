@@ -11,16 +11,18 @@ export const FeaturesLarge = (props: FeatureProps) => {
 
     return (
         <section>
-            <div className="py-4 relative w-full h-min flex flex-col justify-center 
-            items-center flex-nowrap gap-2 rounded-none overflow-hidden bg-blue-00">
-                <div className="rounded-none gap-10 flex-nowrap content-center p-10 relative 
+            <div className="py-12 px-6 md:py-20 md:px-10 relative w-full 
+            h-min flex flex-col justify-center items-center flex-nowrap gap-2 rounded-none
+             overflow-hidden bg-blue-00">
+
+                <div className="rounded-none gap-10 flex-nowrap content-center relative 
                 overflow-visible max-w-full justify-center items-center flex-col flex 
-                h-min flex-shrink-0 w-full sm:w-[1000px] bg-blue-00">
+                h-min flex-shrink-0 w-[330px] sm:w-[1000px] lg:w-[1000px] bg-blue-00">
                     <div className="flex-shrink-0 flex-1 w-full h-min flex flex-col sm:flex-row  
                     justify-center items-center overflow-visible relative content-center
                     flex-nowrap gap-10 rounded-none bg-blue-00" >
                         <div className="
-                box-border flex-1 flex-shrink-0 w-full h-[260px] sm:h-[360px] 
+                box-border flex-1 flex-shrink-0 w-full h-[260px] lg:h-[360px] 
                 block overflow-hidden relative aspect-[1.33/1] sm:aspect-[4/3] bg-cover 
                 bg-no-repeat bg-center rounded-lg"
                             style={{ objectFit: 'cover', backgroundImage: `url(${img.src})` }}
@@ -41,13 +43,14 @@ export const FeaturesLarge = (props: FeatureProps) => {
                             <ActionSection {...actionSection} />
                         </div>
                         <div className="
-                box-border flex-1 flex-shrink-0 w-full h-[260px] sm:h-[360px] 
+                box-border flex-1 flex-shrink-0 w-full h-[260px] lg:h-[360px] 
                 block overflow-hidden relative aspect-[1.33/1] sm:aspect-[4/3] bg-cover 
                 bg-no-repeat bg-center rounded-lg"
                             style={{ objectFit: 'cover', backgroundImage: `url(${img1.src})` }}
                         />
 
                     </div>
+
 
                 </div>
             </div>

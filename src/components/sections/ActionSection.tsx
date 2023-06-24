@@ -11,7 +11,7 @@ export const ActionSection = (props: ActionSectionProps) => {
 
     return (
         <div className="flex h-min max-w-[2018px] p-0 flex-col content-start flex-nowrap
-         items-start justify-center gap-5 relative lg:w-[400px]">
+         items-start justify-center gap-5 relative f-auto lg:w-[400px]">
             <Heading2 text={title?.text} />
             <Subtitle text={subtitle?.text} />
             <DoubleAction actions={actions} />

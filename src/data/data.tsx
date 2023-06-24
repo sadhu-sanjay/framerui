@@ -1,20 +1,35 @@
 import { IconChevronDown } from '@tabler/icons-react'
 import frontImage from '~/assets/images/front.webp'
 import {
-    ChicaneTwoText,
+    DoubleTextProps,
     FeatureProps,
     HeaderProps,
-    TwoColumnImageTextProps
-} from './types'
+    ActionSectionProps
+} from '../shared/types'
 
-export const heroProps: ChicaneTwoText = {
+
+export const actionSectionData: ActionSectionProps = {
+    twoText: {
+        title: {
+            text: 'Double Click to Update Anything',
+        },
+        subtitle: {
+            text: 'Double click the image placeholders to add images. Do the same for any text, then tweak styles and publish.',
+        },
+    },
+    actions: []
+}
+
+
+export const heroProps: DoubleTextProps = {
     title: {
         text: "Welcome to Chicane",
         alignment: 'text-center',
         fontSize: 'text-7xl'
     },
     subtitle: {
-        text: "Find the world of opportunites"
+        text: "Find the world of opportunites",
+        alignment: 'text-center',
     }
 }
 
@@ -49,7 +64,6 @@ export const twoColumnImageTextData: FeatureProps = {
         width: '100%',
         height: '100%',
     },
-
 }
 
 export const featuresLargeData: FeatureProps = {
@@ -119,10 +133,10 @@ export const headerData: HeaderProps = {
             href: '/blog'
         },
         {
-            label: 'Contact',
-            href: '/contact'
+            label: 'About',
+            href: '/about'
         },
-       
+
     ],
     actions: [
         {
