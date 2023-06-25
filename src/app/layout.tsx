@@ -2,6 +2,7 @@ import { ChicaneThemeProvider } from '~/controllers/ThemeProvider'
 import Header from '../components/sections/Header'
 import './globals.css'
 import { Inter } from 'next/font/google'
+import { MobileNav } from '~/components/sections/MobileNav'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -19,6 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className} bg-gradient-to-r from-slate-200 to-slate-300 dark:bg-gradient-to-l dark:from-slate-800 dark:to-slate-900`} >
         <ChicaneThemeProvider >
+          <MobileNav />
           <Header />
           <main>{children}</main>
         </ChicaneThemeProvider>
@@ -26,4 +28,3 @@ export default function RootLayout({
     </html >
   )
 }
-

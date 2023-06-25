@@ -1,6 +1,5 @@
 import { MouseEventHandler } from "react";
 
-
 interface Grid1ItemProps {
     image?: ChicaneImage
     title?: TextProps
@@ -84,3 +83,4 @@ type TailWindColor = 'primary' | 'secondary' | 'accent' | 'neutral' | 'base-100'
 type TailWindFont = 'sans' | 'serif' | 'mono'
 type TailWindFontWeight = 'normal' | 'medium' | 'semibold' | 'bold' | 'extrabold' | 'black'
 type TailWindTextAlign = 'text-left' | 'text-center' | 'tex-right' | 'text-justify'
+type GridStyle = 'style1' | 'style2'

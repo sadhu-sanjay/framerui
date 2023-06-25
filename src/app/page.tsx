@@ -1,9 +1,7 @@
-import { Hero } from '~/components/sections/Hero'
-import Image from 'next/image'
 import { FeaturesLarge } from '~/components/sections/FeatursLarge'
-import { featuresLargeData, heroProps, twoColumnImageTextData } from '~/data/data'
-import img from '~/assets/images/front.webp'
+import { Hero } from '~/components/sections/Hero'
 import { TwoColumnImageText } from '~/components/sections/TwoColumnImageText'
+import { featuresLargeData, heroProps, twoColumnImageTextData } from '~/data/data'
 
 export default function Home() {
   return (

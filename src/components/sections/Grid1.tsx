@@ -1,7 +1,7 @@
 import img from '~/assets/images/feature.jpeg'
-import { ActionSection } from '../sections/ActionSection'
+import { ActionSection } from './ActionSection'
 import { actionSectionData } from '~/data/data'
-import { DoubleText } from './DoubleText'
+import { DoubleText } from '../Molecules/DoubleText'
 import { grid1Data } from '~/data/griddata'
 import { Grid1ItemProps } from '~/shared/types'
 
@@ -49,4 +49,6 @@ export const Grid1 = () => {
             </div>
         </section>
     )
+
+
 }

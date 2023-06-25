@@ -1,10 +1,12 @@
-import { Grid1 } from "~/components/Molecules/Grid1";
+import { Grid1 } from "~/components/sections/Grid1";
+import { Grid2 } from "~/components/sections/Grid2";
 
 export default function AboutPage() {
     return (
         <>
             <div>
-                <Grid1 />
+                <Grid2 />
+                {/* <Grid1 /> */}
             </div>
         </>
     )
