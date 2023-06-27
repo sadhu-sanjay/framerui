@@ -1,4 +1,4 @@
-import { DoubleTextProps } from "~/shared/types"
+import { DoubleTextProps } from "~/components/shared/types"
 
 export function DoubleText({ props }: { props: DoubleTextProps }) {
 

@@ -1,5 +1,5 @@
 import { Heading } from '~/components/atoms/Heading'
-import { CallToAction, ChicaneTwoText, TextProps } from '~/shared/types';
+import { CallToAction, ChicaneTwoText, TextProps } from '~/components/shared/types';
 import { Subtitle } from '~/components/atoms/Subtitle';
 import { ImageContainer } from '../atoms/ImageContainer';
 import { ImageProps } from 'next/image';

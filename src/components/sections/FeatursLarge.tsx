@@ -1,7 +1,7 @@
 import img from '~/assets/images/front.webp';
 import img1 from '~/assets/images/back.webp';
 import { ActionSection } from "~/components/sections/ActionSection";
-import { FeatureProps } from "~/shared/types";
+import { FeatureProps } from "~/components/shared/types";
 
 export const FeaturesLarge = (props: FeatureProps) => {
 

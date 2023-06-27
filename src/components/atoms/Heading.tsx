@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import AnimateUp from '~/common/BaseAnimation'
-import { TailWindTextAlign, TailWindTextSizes, TextProps } from '~/shared/types'
+import { TailWindTextAlign, TailWindTextSizes, TextProps } from '~/components/shared/types'
 
 export const Heading = ({ text, textAlign = 'text-center' }: { text?: string, textAlign?: TailWindTextAlign }) => {
 

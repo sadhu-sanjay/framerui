@@ -1,6 +1,6 @@
 import sideImg from '~/assets/images/side.webp';
 import { ActionSection } from "~/components/sections/ActionSection";
-import { FeatureProps } from "~/shared/types";
+import { FeatureProps } from "~/components/shared/types";
 
 export const TwoColumnImageText = (props: FeatureProps) => {
 

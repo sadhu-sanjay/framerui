@@ -1,5 +1,5 @@
 import { MouseEventHandler } from "react";
-
+import { IconHome2 } from '@tabler/icons-react'
 interface Grid1ItemProps {
     image?: ChicaneImage
     title?: TextProps

@@ -6,7 +6,7 @@ import Image from 'next/image'
 import { headerData } from '~/data/data'
 import Logo from '../atoms/Logo'
 import ToggleMenu from "../atoms/ToggleMenu"
-import { CallToAction } from "~/shared/types"
+import { CallToAction } from "~/components/shared/types"
 import CTA from '~/components/atoms/CTA'
 import { IconRss } from '@tabler/icons-react'
 import ToggleDarkMode from '~/components/atoms/ToggleDarkMode'

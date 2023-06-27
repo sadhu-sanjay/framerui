@@ -1,4 +1,4 @@
-import { CallToAction } from "~/shared/types";
+import { CallToAction } from "~/components/shared/types";
 import CTA from "../atoms/CTA";
 
 export const DoubleAction = ({ actions }: { actions: Array<CallToAction> }): JSX.Element => {

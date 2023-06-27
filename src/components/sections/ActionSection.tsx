@@ -1,4 +1,4 @@
-import { ActionSectionProps } from "~/shared/types";
+import { ActionSectionProps } from "~/components/shared/types";
 import { Heading2 } from "../atoms/Heading2";
 import { Subtitle } from "../atoms/Subtitle";
 import { DoubleAction } from "~/components/Molecules/DoubleAction"

@@ -3,7 +3,7 @@ import { ActionSection } from './ActionSection'
 import { actionSectionData } from '~/data/data'
 import { DoubleText } from '../Molecules/DoubleText'
 import { grid1Data } from '~/data/griddata'
-import { Grid1ItemProps } from '~/shared/types'
+import { Grid1ItemProps } from '~/components/shared/types'
 
 const Grid1Item = ({ props, index }: { props: Grid1ItemProps, index: number }) => {
 

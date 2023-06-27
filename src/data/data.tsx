@@ -1,12 +1,14 @@
 import { IconChevronDown } from '@tabler/icons-react'
+import { IconHome2 } from '@tabler/icons-react'
+
 import frontImage from '~/assets/images/front.webp'
+
 import {
     DoubleTextProps,
     FeatureProps,
     HeaderProps,
     ActionSectionProps
-} from '../shared/types'
-
+} from '../components/shared/types'
 
 export const actionSectionData: ActionSectionProps = {
     twoText: {
@@ -129,12 +131,15 @@ export const headerData: HeaderProps = {
             ]
         },
         {
-            label: 'Blog',
-            href: '/blog'
+            label: 'Assets',
+            href: '/assets',
+            icon: IconChevronDown,
         },
         {
             label: 'About',
-            href: '/about'
+            href: '/about',
+            icon: IconHome2,
+
         },
 
     ],
