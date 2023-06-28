@@ -19,7 +19,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-gradient-to-r from-slate-200 to-slate-300 dark:bg-gradient-to-l dark:from-slate-800 dark:to-slate-900`} >
+      <body className={`${inter.className} bg-gradient-to-r from-slate-200
+       to-slate-300 dark:bg-gradient-to-l dark:from-slate-800
+        dark:to-slate-900`} >
         <ChicaneThemeProvider >
           <MobileNav />
           <Nav/>

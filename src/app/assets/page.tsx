@@ -1,9 +1,11 @@
+
 import { Heading } from "~/components/atoms/Heading"
 import { Heading2 } from "~/components/atoms/Heading2"
 import { Heading3 } from "~/components/atoms/Heading3"
 import { Subtitle } from "~/components/atoms/Subtitle"
 import { Subtitle1 } from "~/components/atoms/Subtitle1"
 import Image from "next/image"
+import Link from 'next/link'
 
 // Give me random data of 10 solor power controller 
 const data = [
@@ -13,7 +15,7 @@ const data = [
         "capacity": 1000,
         "voltage": 24,
         "status": "Active",
-        "imageURL": "https://source.unsplash.com/random/800x600/?hardware"
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
     },
     {
         "id": "SPC002",
@@ -105,41 +107,47 @@ export default function ControllerComponent() {
                 dark:bg-gradient-to-l dark:from-slate-800 dark:to-slate-900"
             >
                 {data.map((item) =>
-                    <div
-                        key={item.id}
-                        className=" bg-white dark:bg-slate-800 rounded-lg 
-                        p-4 shadow-md hover:scale-105 hover:shadow-xl transition-all"
+                    <Link
+                        href={`/assets/${item.id}`}
                     >
-                        {/* <div
+                        <div
+                            key={item.id}
+                            className=" bg-white dark:bg-slate-800 rounded-lg 
+                        p-4 shadow-md hover:scale-105 hover:shadow-xl transition-all"
+                        >
+                            {/* <div
                             className="w-full gap-2 aspect-square overflow-hidden relative"
                             style={{ objectFit: 'cover', backgroundImage: `url(${item.imageURL!})` }}
                         /> */}
-                        <div className="flex flex-col gap-2 py-2 w-full">
-                            <Heading2 text={item.id} />
-                            <div
-                                className="flex flex-col gap-2 w-full"
-                            >
-                                <div >
-                                    <Heading3 text={"Manufacturer"} />
-                                    <Subtitle1 props={{ text: item.manufacturer }} />
-                                </div >
-                                <div>
-                                    <Heading3 text={"Capicity"} />
-                                    <Subtitle1 props={{ text: item.capacity.toString() }} />
-                                </div>
-                                <div>
-                                    <Heading3 text={"Voltage"} />
-                                    <Subtitle1 props={{ text: item.voltage.toString() }} />
-                                </div>
-                                <div>
-                                    <Heading3 text={"Status"} />
-                                    <Subtitle1 props={{ text: item.status.toString() }} />
+                            <div className="flex flex-col gap-2 py-2 w-full">
+                                <Heading2 text={item.id} />
+                                <div
+                                    className="flex flex-col gap-2 w-full"
+                                >
+                                    <div >
+                                        <Heading3 text={"Manufacturer"} />
+                                        <Subtitle1 props={{ text: item.manufacturer }} />
+                                    </div >
+                                    <div>
+                                        <Heading3 text={"Capicity"} />
+                                        <Subtitle1 props={{ text: item.capacity.toString() }} />
+                                    </div>
+                                    <div>
+                                        <Heading3 text={"Voltage"} />
+                                        <Subtitle1 props={{ text: item.voltage.toString() }} />
+                                    </div>
+                                    <div>
+                                        <Heading3 text={"Status"} />
+                                        <Subtitle1 props={{ text: item.status.toString() }} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 )}
             </div>
         </div >
     )
 }
+
+

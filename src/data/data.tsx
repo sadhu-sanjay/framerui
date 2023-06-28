@@ -10,6 +10,89 @@ import {
     ActionSectionProps
 } from '../components/shared/types'
 
+export const assetData = [
+    {
+        "id": "SPC001",
+        "manufacturer": "ABC Electronics",
+        "capacity": 1000,
+        "voltage": 24,
+        "status": "Active",
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
+    },
+    {
+        "id": "SPC002",
+        "manufacturer": "XYZ Solar",
+        "capacity": 2000,
+        "voltage": 48,
+        "status": "Active",
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
+    },
+    {
+        "id": "SPC003",
+        "manufacturer": "SolarTech",
+        "capacity": 1500,
+        "voltage": 36,
+        "status": "Inactive",
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
+    },
+    {
+        "id": "SPC004",
+        "manufacturer": "SunPower Inc.",
+        "capacity": 1200,
+        "voltage": 12,
+        "status": "Active",
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
+    },
+    {
+        "id": "SPC005",
+        "manufacturer": "EcoSolar",
+        "capacity": 1800,
+        "voltage": 24,
+        "status": "Active",
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
+    },
+    {
+        "id": "SPC006",
+        "manufacturer": "SolarTech",
+        "capacity": 900,
+        "voltage": 12,
+        "status": "Inactive",
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
+    },
+    {
+        "id": "SPC007",
+        "manufacturer": "ABC Electronics",
+        "capacity": 2500,
+        "voltage": 48,
+        "status": "Active",
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
+    },
+    {
+        "id": "SPC008",
+        "manufacturer": "XYZ Solar",
+        "capacity": 3000,
+        "voltage": 48,
+        "status": "Active",
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
+    },
+    {
+        "id": "SPC009",
+        "manufacturer": "SunPower Inc.",
+        "capacity": 2000,
+        "voltage": 36,
+        "status": "Inactive",
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
+    },
+    {
+        "id": "SPC010",
+        "manufacturer": "EcoSolar",
+        "capacity": 1200,
+        "voltage": 24,
+        "status": "Active",
+        "imageURL": "https://source.unsplash.com/random/800x600/?solar"
+    }
+]
+
 export const actionSectionData: ActionSectionProps = {
     twoText: {
         title: {

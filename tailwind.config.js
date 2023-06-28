@@ -19,6 +19,7 @@ module.exports = {
         textHeadingDark: colors.gray[200],
         textSecondary: '#888888',
         textSecondaryDark: colors.gray[400],
+        'bgDark': 'dark:bg-gradient-to-l dark:from-slate-800 dark:to-slate-900',
       },
       animation: {
         slide_down: 'slide_down 0.44s ease-in-out',

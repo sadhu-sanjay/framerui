@@ -39,7 +39,7 @@ export const Nav = () => {
                     >
                         <Image
                             src="/_static/logotype.svg"
-                            alt="Dub.sh logo"
+                            alt="logo "
                             width={834}
                             height={236}
                             className="w-24"

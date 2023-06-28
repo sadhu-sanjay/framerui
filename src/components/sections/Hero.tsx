@@ -30,7 +30,7 @@ function Hero(props: ChicaneTwoText) {
                 <div className='flex flex-col items-center 
                 justify-center'>
                     <Heading text={title?.text} ></Heading>
-                    <Subtitle {...subtitle} />
+                    <Subtitle props={{...subtitle}} />
                     <div style={{ marginTop: '.5rem' }}> {/*custom padding as workaround */}
                         <AnimateUp > <CTA data={callToAction} /> </AnimateUp>
                     </div>
