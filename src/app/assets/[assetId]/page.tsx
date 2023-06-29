@@ -20,9 +20,9 @@ export default function AssetDetails(
 
     return (
         <div
-            className="bg-gray-100 text-gray-900
-        dark:text-gray-100 w-full h-auto ">
-            <div className="p-8 flex flex-row justify-between items-center">
+            className=" dark:bg-gradient-to-br from-gray-900 to-gray-800
+            drop-shadow-lg rounded-lg bg-gray-100 w-full h-auto ">
+            <div className="p-10 flex flex-row justify-between items-center">
                 <div className="w-[30%] gap-3 flex flex-col justify-between items-start">
                     <div
                         className="w-full flex flex-row justify-between gap-4 items-center"
@@ -64,11 +64,8 @@ export default function AssetDetails(
                     className="w-[46%] rounded-lg gap-2 aspect-square overflow-hidden relative"
                 >
                     <Image alt="Battery Image" src={asset.imageURL} fill />
-                </div> 
+                </div>
             </div>
         </div>
     )
 }
-
-
-

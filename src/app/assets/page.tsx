@@ -96,53 +96,48 @@ const data = [
 export default function ControllerComponent() {
 
     return (
-        <div
-            className="bg-red-00 flex flex-col 
-            items-start justify-center">
+        <div className=" bg-red-00 flex flex-col items-start justify-center" >
             <div className="p-4">
                 <Heading text="Controllers" />
             </div>
             <div
-                className="grid grid-cols-3 gap-3 w-full relative overflow-visible p-4 dark:bg-gradient-to-l dark:from-slate-800 dark:to-slate-900"
+                className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-3 w-full relative overflow-visible p-4 dark:bg-gradient-to-l dark:from-slate-800 dark:to-slate-900"
             >
                 {data.map((item) =>
-                    <Link
-                        href={`/assets/${item.id}`}
+                    <div
+                        key={item.id}
                     >
-                        <div
-                            key={item.id}
-                            className=" bg-white dark:bg-slate-800 rounded-lg 
+                        <Link href={`/assets/${item.id}`} >
+                            <div
+                                className=" bg-white dark:bg-slate-800 rounded-lg 
                         p-4 shadow-md hover:scale-105 hover:shadow-xl transition-all"
-                        >
-                            {/* <div
-                            className="w-full gap-2 aspect-square overflow-hidden relative"
-                            style={{ objectFit: 'cover', backgroundImage: `url(${item.imageURL!})` }}
-                        /> */}
-                            <div className="flex flex-col gap-2 py-2 w-full">
-                                <Heading2 text={item.id} />
-                                <div
-                                    className="flex flex-col gap-2 w-full"
-                                >
-                                    <div >
-                                        <Heading3 text={"Manufacturer"} />
-                                        <Subtitle1 props={{ text: item.manufacturer }} />
-                                    </div >
-                                    <div>
-                                        <Heading3 text={"Capicity"} />
-                                        <Subtitle1 props={{ text: item.capacity.toString() }} />
-                                    </div>
-                                    <div>
-                                        <Heading3 text={"Voltage"} />
-                                        <Subtitle1 props={{ text: item.voltage.toString() }} />
-                                    </div>
-                                    <div>
-                                        <Heading3 text={"Status"} />
-                                        <Subtitle1 props={{ text: item.status.toString() }} />
+                            >
+                                <div className="flex flex-col gap-2 py-2 w-full">
+                                    <Heading2 text={item.id} />
+                                    <div
+                                        className="flex flex-col gap-2 w-full"
+                                    >
+                                        <div >
+                                            <Heading3 text={"Manufacturer"} />
+                                            <Subtitle1 props={{ text: item.manufacturer }} />
+                                        </div >
+                                        <div>
+                                            <Heading3 text={"Capicity"} />
+                                            <Subtitle1 props={{ text: item.capacity.toString() }} />
+                                        </div>
+                                        <div>
+                                            <Heading3 text={"Voltage"} />
+                                            <Subtitle1 props={{ text: item.voltage.toString() }} />
+                                        </div>
+                                        <div>
+                                            <Heading3 text={"Status"} />
+                                            <Subtitle1 props={{ text: item.status.toString() }} />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </Link>
+                        </Link>
+                    </div>
                 )}
             </div>
         </div >

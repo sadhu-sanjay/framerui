@@ -10,7 +10,7 @@ export const TwoColumnImageText = (props: FeatureProps) => {
 
     return (
         <section>
-            <div className="flex-shrink-0 flex-1 w-full h-min flex flex-col sm:flex-row  
+            <div className="px-6 py-12 md:py-20 md:px-10 flex-shrink-0 flex-1 w-full h-min flex flex-col sm:flex-row  
                     justify-center items-center overflow-visible relative content-center
                     flex-nowrap gap-10 rounded-none bg-blue-00" >
                 <div className="

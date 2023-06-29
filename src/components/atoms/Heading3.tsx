@@ -9,9 +9,12 @@ export const Heading3 = ({ text, textAlign = 'text-left' }: { text?: string, tex
     return (
         <AnimateUp>
             <div
-                className={` flex-shrink-0 w-auto h-auto 
-                whitespace-pre font-semibold font-sans text-custom-color 
-                text-base leading-6 ${textAlign}
+                className={` flex-shrink-0 w-auto h-auto whitespace-pre break-words relative overflow-visible
+                font-semibold font-sans 
+                dark:text-textHeadingDark text-textHeading  
+                text-base 
+                tracking-tight leading-6 
+                ${textAlign}
                 `} >
                 {text}
             </div>

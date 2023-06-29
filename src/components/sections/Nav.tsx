@@ -66,7 +66,7 @@ export const Nav = () => {
                         {headerData.links?.map((item) => (
                             <MenuItem key={`item-${item.label}`} {...item} />
                         ))}
-                        <div className="flex ml-1 w-full items-center justify-between md:w-auto">
+                        <div className="flex ml-2 w-full items-center justify-between md:w-auto">
                             {showToggleTheme && <ToggleDarkMode />}
 
                             {actions && actions.length > 0 && (

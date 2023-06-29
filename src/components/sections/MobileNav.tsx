@@ -9,6 +9,7 @@ import { headerData } from '~/data/data'
 import ToggleDarkMode from '../atoms/ToggleDarkMode';
 import CTA from '../atoms/CTA';
 import { CallToAction } from '../shared/types';
+import { Heading3 } from '../atoms/Heading3';
 
 
 export const MobileNav = () => {
@@ -47,7 +48,7 @@ export const MobileNav = () => {
                                 dark:focus:ring w-full font-semibold capitalize"
                                 onClick={() => toggleOpen()}>
                                 {/* {Icon && <Icon />} */}
-                                {label}
+                                <Heading3 text={label} />
                             </Link>
                         </MenuItem>
                     </div>
