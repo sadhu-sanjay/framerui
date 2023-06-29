@@ -21,7 +21,7 @@ export const Subtitle1 = ({ props, className = '' }: { props: TextProps, classNa
             <div className={`${className} ${alignment} rounded-xl
             flex-shrink-0 w-auto h-auto whitespace-pre-wrap
             break-words overflow-visible relative font-medium font-sans
-            text-gray-500 text-sm leading-6 dark:text-gray-200`
+            text-gray-500 leading-6 dark:text-gray-200 text-base`
             }>
                 {text}
             </div>

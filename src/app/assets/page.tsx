@@ -103,8 +103,7 @@ export default function ControllerComponent() {
                 <Heading text="Controllers" />
             </div>
             <div
-                className="grid grid-cols-3 gap-3 w-full relative overflow-visible p-4
-                dark:bg-gradient-to-l dark:from-slate-800 dark:to-slate-900"
+                className="grid grid-cols-3 gap-3 w-full relative overflow-visible p-4 dark:bg-gradient-to-l dark:from-slate-800 dark:to-slate-900"
             >
                 {data.map((item) =>
                     <Link

@@ -6,6 +6,9 @@ import logo from '~/assets/images/front.webp'
 import { motion } from 'framer-motion';
 import { ReactNode, useEffect, useMemo, useRef, useState } from "react";
 import { headerData } from '~/data/data'
+import ToggleDarkMode from '../atoms/ToggleDarkMode';
+import CTA from '../atoms/CTA';
+import { CallToAction } from '../shared/types';
 
 
 export const MobileNav = () => {
@@ -13,6 +16,7 @@ export const MobileNav = () => {
     const [isOpen, toggleOpen] = useCycle(false, true);
     const containerRef = useRef(null);
     const [height, setHeight] = useState(0);
+    const { links, actions, isSticky, showToggleTheme, showRssFeed, position } = headerData;
 
     return (
         <motion.nav
@@ -23,19 +27,24 @@ export const MobileNav = () => {
             className={`fixed inset-0 z-50 w-full sm:hidden ${isOpen ? "" : "pointer-events-none"}`}
         >
             <motion.div
-                className='absolute inset-0 w-full right-0 bg-white'
+                className='absolute inset-0 w-full right-0 
+                bg-gradient-to-l from-slate-300 to-slate-200
+                dark:bg-gradient-to-l dark:from-slate-800 dark:to-slate-900'
                 variants={sidebar}
             />
             <motion.ul
                 variants={variants}
-                className="absolute grid w-full gap-3 px-10 py-16"
-            >
+                className="absolute grid w-full gap-3 px-10 py-16 `" >
                 {headerData.links?.map(({ href, label, icon: Icon }, index) => (
                     <div key={index} className='grid gap-3'>
                         <MenuItem >
                             <Link
-                                href={`/${href}`}
-                                className="flex w-full font-semibold capitalize"
+                                href={`${href}`}
+                                className=" inline-flex items-center 
+                                rounded-lg p-2.5 text-sm hover:bg-gray-100 
+                                focus:outline-none focus:ring-4 focus:ring-gray-200 
+                                text-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 
+                                dark:focus:ring w-full font-semibold capitalize"
                                 onClick={() => toggleOpen()}>
                                 {/* {Icon && <Icon />} */}
                                 {label}
@@ -43,33 +52,29 @@ export const MobileNav = () => {
                         </MenuItem>
                     </div>
                 ))}
-                <MenuItem key="Login">
-                    <Link
-                        href={
-                            process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
-                                ? "https://app.dub.sh/login"
-                                : "http://app.localhost:3000/login"
-                        }
-                        className="flex w-full font-semibold capitalize"
-                    >
-                        Log in
-                    </Link>
-                </MenuItem>
 
-                <MenuItem key="Signup">
-                    <Link
-                        href={
-                            process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
-                                ? "https://app.dub.sh/register"
-                                : "http://app.localhost:3000/register"
-                        }
-                        className="flex w-full font-semibold capitalize"
-                    >
-                        Sign Up
-                    </Link>
-                </MenuItem>
             </motion.ul>
             <MenuToggle toggle={toggleOpen} />
+            <div
+                className={`${isOpen ? 'block' : 'hidden'} 
+                fixed bottom-0 left-0 w-full justify-end p-10 md:static 
+                md:mb-0 md:flex md:w-auto md:self-center md:p-0`}
+            >
+                <div className="flex w-full items-center justify-between md:w-auto">
+                    {showToggleTheme && <ToggleDarkMode />}
+                    {actions && actions.length > 0 && (
+                        <div className="ml-4 flex w-max flex-wrap justify-end">
+                            {actions.map((callToAction, index) => (
+                                <CTA
+                                    key={`item-action-${index}`}
+                                    data={callToAction as CallToAction}
+                                />
+                            ))}
+                        </div>
+                    )}
+                </div>
+            </div>
+
         </motion.nav>
     );
 }
@@ -170,8 +175,9 @@ const MenuToggle = ({ toggle }: { toggle: any }) => (
 const Path = (props: any) => (
     <motion.path
         fill="transparent"
-        strokeWidth="2"
-        stroke="hsl(0, 0%, 18%)"
+        strokeWidth="2.3"
+        // stroke="hsl(0, 0%, 18%)"
+        className="dark:stroke-white stroke-black"
         strokeLinecap="round"
         {...props}
     />
