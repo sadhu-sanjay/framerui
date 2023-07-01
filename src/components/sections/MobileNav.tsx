@@ -30,7 +30,7 @@ export const MobileNav = () => {
             <motion.div
                 className='absolute inset-0 w-full right-0 
                 bg-gradient-to-l from-slate-300 to-slate-200
-                dark:bg-gradient-to-l dark:from-slate-800 dark:to-slate-900'
+                dark:bg-gradient-to-l dark:from-slate-800 dark:bg-slate-900'
                 variants={sidebar}
             />
             <motion.ul

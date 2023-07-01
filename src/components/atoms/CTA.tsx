@@ -17,7 +17,7 @@ const CTA = (props: { data: CallToAction }) => {
                     {targetBlank ? (
                         <Link
                             className={`btn ${btnType === 'primary' ? 'btn-primary' : ''} w-full 
-                            s:mb-0 ${classLocal ? classLocal : ''} 
+                             ${classLocal ? classLocal : ''} 
                             ${btnText === 'uppercase' ? 'uppercase' : ''}`}
                             href={href}
                             target='_blank'

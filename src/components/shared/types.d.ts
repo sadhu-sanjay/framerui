@@ -61,7 +61,7 @@ interface MenuLink extends Link {
 
 interface CallToAction {
     text: string;
-    href: string;
+    href?: string;
     icon?: Function;
     targetBlank?: boolean;
     btnText?: 'uppercase' | 'capitalize'

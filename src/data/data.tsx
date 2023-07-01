@@ -10,6 +10,7 @@ import {
     ActionSectionProps
 } from '../components/shared/types'
 
+
 export const assetData = [
     {
         "id": "SPC001",

@@ -12,7 +12,7 @@ export const ImageContainer = (imgProps: ImageProps) => {
 
     return (
         <>
-            <AnimateUp>
+            <AnimateUp margin='300px'>
                 <Image
                     src={src}
                     alt={alt}

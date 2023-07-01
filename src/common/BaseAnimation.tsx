@@ -2,13 +2,25 @@
 
 import { animationEnabled } from '~/utils/config.js'
 import { delay, motion } from 'framer-motion';
+import { useRef } from 'react';
 
-const AnimateUp = ({ children, delay = 0.2 }: { children: React.ReactNode, delay?: number }) => {
+const AnimateUp = (
+    {
+        children,
+        delay = 0.2,
+        margin = ''
+    }: {
+        children: React.ReactNode,
+        delay?: number
+        margin?: string
+    }) => {
+
     return (
         <>
             {animationEnabled ? <motion.div
                 initial={{ y: '100%', opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true, margin: margin }}
                 transition={{
                     type: 'spring',
                     stiffness: 100,
