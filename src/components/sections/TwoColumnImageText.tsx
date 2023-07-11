@@ -20,7 +20,7 @@ export const TwoColumnImageText = (props: FeatureProps) => {
                     style={{ objectFit: 'cover', backgroundImage: `url(${sideImg.src})` }}
                 />
                 <div className="content-center flex flex-1 w-full h-auto 
-                flex-col justify-center items-start self-stretch relative p-0 gap-5 
+                flex-col justify-center items-center self-stretch relative p-0 gap-5 
                 rounded-none bg-blue-00">
                     <ActionSection {...actionSection} />
                 </div>

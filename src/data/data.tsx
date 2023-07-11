@@ -156,7 +156,7 @@ export const featuresLargeData: FeatureProps = {
     actionSection: {
         twoText: {
             title: {
-                text: 'Fast',
+                text: 'Featurs Large',
                 fontSize: 'text-5xl',
                 alignment: 'text-left',
             },
