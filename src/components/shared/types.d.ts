@@ -52,7 +52,7 @@ interface Link {
     label?: string
     href?: string
     ariaLabel?: string
-    icon?: Function
+    icon?: FunctionComponent<React.SVGProps<SVGSVGElement>>,
 }
 
 interface MenuLink extends Link {
@@ -62,7 +62,7 @@ interface MenuLink extends Link {
 interface CallToAction {
     text: string;
     href?: string;
-    icon?: Function;
+    icon?: FunctionComponent<React.SVGProps<SVGSVGElement>>,
     targetBlank?: boolean;
     btnText?: 'uppercase' | 'capitalize'
     btnType?: 'primary' | 'secondary'
