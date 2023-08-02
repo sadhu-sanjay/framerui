@@ -44,7 +44,7 @@ export const Grid1 = () => {
                 <div className="grid w-full gap-[60px] max-w-[1000px] relative 
                  grid-cols-1 md:grid-cols-3 lg:grid-cols-3
                  overflow-visible  bg-red-00" >
-                    {grid1Data.map((item, index) => <Grid1Item props={item} index={index} />)}
+                    {grid1Data.map((item, index) => <Grid1Item key={index} props={item} index={index} />)}
                 </div>
             </div>
         </section>

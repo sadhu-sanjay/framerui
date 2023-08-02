@@ -1,5 +1,5 @@
 import { Heading } from '~/components/atoms/Heading'
-import { CallToAction, ChicaneTwoText, TextProps } from '~/components/shared/types';
+import { CallToAction, DoubleTextProps, TextProps } from '~/components/shared/types';
 import { Subtitle } from '~/components/atoms/Subtitle';
 import { ImageContainer } from '../atoms/ImageContainer';
 import { ImageProps } from 'next/image';
@@ -7,7 +7,7 @@ import img from '~/assets/images/hero.png'
 import CTA from '../atoms/CTA';
 import AnimateUp from '~/common/BaseAnimation';
 
-function Hero(props: ChicaneTwoText) {
+function Hero(props: DoubleTextProps) {
 
     const { title, subtitle, } = props;
     const imgProps: ImageProps = {
