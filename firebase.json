@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "framerui",
     "public": ".next",
     "ignore": [
       "firebase.json",
