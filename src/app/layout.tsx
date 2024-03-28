@@ -8,7 +8,7 @@ import { Nav } from "~/components/sections/Nav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: 'Cohttps://github.com/sadhu-sanjay/frameruimputer One - our take on CPU case',
+  title: 'Computer One - our take on CPU case',
   description: 'A simple yet elegent CPU case'
 }
 
