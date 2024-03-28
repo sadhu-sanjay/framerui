@@ -3,7 +3,7 @@ import { CallToAction, DoubleTextProps, TextProps } from '~/components/shared/ty
 import { Subtitle } from '~/components/atoms/Subtitle';
 import { ImageContainer } from '../atoms/ImageContainer';
 import { ImageProps } from 'next/image';
-import img from '~/assets/images/hero.png'
+import img from '~/assets/images/hero.webp'
 import CTA from '../atoms/CTA';
 import AnimateUp from '~/common/BaseAnimation';
 
