@@ -15,7 +15,7 @@ const CTA = (props: { data: CallToAction }) => {
             {props.data && text && href && (
                 <div className='flex w-full sm:w-auto' >
                     {targetBlank ? (
-                        <Link
+                        <a
                             className={`btn ${btnType === 'primary' ? 'btn-primary' : ''} w-full 
                              ${classLocal ? classLocal : ''} 
                             ${btnText === 'uppercase' ? 'uppercase' : ''}`}
@@ -30,15 +30,15 @@ const CTA = (props: { data: CallToAction }) => {
                             >
                                 {text}
                             </div>
-                        </Link>
+                        </a>
                     ) : (
-                        <Link
+                        <a
                             className={`btn ${btnType === 'primary' ? 'btn-primary' : ''} w-full sm:mb-0 ${classLocal ? classLocal : ''
                                 } ${btnText === 'uppercase' ? 'uppercase' : ''}`}
                             href={href}
                         >
                             {Icon && <Icon className="mr-1 -ml-1.5 h-5 w-5" />} {text}
-                        </Link>
+                        </a>
                     )}
                 </div>
             )}

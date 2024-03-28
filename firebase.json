@@ -1,7 +1,7 @@
 {
   "hosting": {
-    "site": "framerui",
-    "public": ".next",
+    "public": "out",
+    "site": "computer-one",
     "ignore": [
       "firebase.json",
       "**/.*",
