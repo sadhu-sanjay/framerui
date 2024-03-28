@@ -76,7 +76,6 @@ const Field = ({ name, value, type, placeholder, required }: FieldStructure) => 
             className='text-base text-gray-700 dark:text-gray-200 w-full p-4 rounded-md'
             required={required}
             rows={5}
-            value={value}
         />
     }
 
@@ -85,6 +84,5 @@ const Field = ({ name, value, type, placeholder, required }: FieldStructure) => 
         placeholder={placeholder}
         className='text-base text-gray-700 dark:text-gray-200 w-full p-4 rounded-md'
         required={required}
-        value={value}
     />
 }
